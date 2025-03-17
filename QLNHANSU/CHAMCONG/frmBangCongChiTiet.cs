@@ -14,6 +14,8 @@ using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid.Columns;
 using DevExpress.XtraSplashScreen;
 using DataLayer;
+using QLNHANSU.Reposts;
+using DevExpress.XtraReports.UI;
 
 namespace QLNHANSU.CHAMCONG
 {
@@ -120,7 +122,9 @@ namespace QLNHANSU.CHAMCONG
 
         private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            List<tb_KYCONGCHITIET> lst = _kcct.getList(_makycong);
+            rptBangCongTongHop rpt = new rptBangCongTongHop(lst,_makycong.ToString());
+            rpt.ShowPreviewDialog();
         }
 
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

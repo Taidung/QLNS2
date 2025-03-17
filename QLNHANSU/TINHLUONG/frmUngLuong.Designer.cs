@@ -37,7 +37,6 @@
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnLuu = new DevExpress.XtraBars.BarButtonItem();
             this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPrint = new DevExpress.XtraBars.BarButtonItem();
             this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -59,11 +58,11 @@
             this.gvDanhSach = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.DELETED_BY = new DevExpress.XtraGrid.Columns.GridColumn();
             this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.NGAY = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HOTENNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SOTIEN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GHICHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.IDNV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.NGAY = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -93,8 +92,7 @@
             this.btnXoa,
             this.btnLuu,
             this.btnHuy,
-            this.btnDong,
-            this.btnPrint});
+            this.btnDong});
             this.barManager1.MainMenu = this.bar1;
             this.barManager1.MaxItemId = 7;
             this.barManager1.StatusBar = this.bar3;
@@ -113,7 +111,6 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnLuu, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnHuy, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPrint, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDong, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.OptionsBar.MultiLine = true;
             this.bar1.OptionsBar.UseWholeRow = true;
@@ -158,14 +155,6 @@
             this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Caption = "In";
-            this.btnPrint.Id = 6;
-            this.btnPrint.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrint.ImageOptions.SvgImage")));
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPrint_ItemClick);
             // 
             // btnDong
             // 
@@ -397,6 +386,19 @@
             this.ID.Name = "ID";
             this.ID.Width = 30;
             // 
+            // NGAY
+            // 
+            this.NGAY.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.NGAY.AppearanceHeader.Options.UseFont = true;
+            this.NGAY.Caption = "NGÀY";
+            this.NGAY.FieldName = "CREATED_DATE";
+            this.NGAY.MaxWidth = 100;
+            this.NGAY.MinWidth = 80;
+            this.NGAY.Name = "NGAY";
+            this.NGAY.Visible = true;
+            this.NGAY.VisibleIndex = 2;
+            this.NGAY.Width = 94;
+            // 
             // HOTENNV
             // 
             this.HOTENNV.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
@@ -446,19 +448,6 @@
             this.IDNV.Name = "IDNV";
             this.IDNV.Width = 94;
             // 
-            // NGAY
-            // 
-            this.NGAY.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.NGAY.AppearanceHeader.Options.UseFont = true;
-            this.NGAY.Caption = "NGÀY";
-            this.NGAY.FieldName = "CREATED_DATE";
-            this.NGAY.MaxWidth = 100;
-            this.NGAY.MinWidth = 80;
-            this.NGAY.Name = "NGAY";
-            this.NGAY.Visible = true;
-            this.NGAY.VisibleIndex = 2;
-            this.NGAY.Width = 94;
-            // 
             // frmUngLuong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -498,7 +487,6 @@
         private DevExpress.XtraBars.BarButtonItem btnXoa;
         private DevExpress.XtraBars.BarButtonItem btnLuu;
         private DevExpress.XtraBars.BarButtonItem btnHuy;
-        private DevExpress.XtraBars.BarButtonItem btnPrint;
         private DevExpress.XtraBars.BarButtonItem btnDong;
         private DevExpress.XtraBars.Bar bar3;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;

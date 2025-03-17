@@ -37,7 +37,6 @@
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnLuu = new DevExpress.XtraBars.BarButtonItem();
             this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPrint = new DevExpress.XtraBars.BarButtonItem();
             this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -66,9 +65,9 @@
             this.SOGIO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HESO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.SOTIEN = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.GHICHU = new DevExpress.XtraGrid.Columns.GridColumn();
             this.IDNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.IDLOAICA = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.GHICHU = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -98,8 +97,7 @@
             this.btnXoa,
             this.btnLuu,
             this.btnHuy,
-            this.btnDong,
-            this.btnPrint});
+            this.btnDong});
             this.barManager1.MainMenu = this.bar1;
             this.barManager1.MaxItemId = 7;
             this.barManager1.StatusBar = this.bar3;
@@ -118,7 +116,6 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnLuu, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnHuy, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPrint, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDong, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.OptionsBar.MultiLine = true;
             this.bar1.OptionsBar.UseWholeRow = true;
@@ -163,14 +160,6 @@
             this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Caption = "In";
-            this.btnPrint.Id = 6;
-            this.btnPrint.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrint.ImageOptions.SvgImage")));
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPrint_ItemClick);
             // 
             // btnDong
             // 
@@ -492,6 +481,19 @@
             this.SOTIEN.VisibleIndex = 5;
             this.SOTIEN.Width = 120;
             // 
+            // GHICHU
+            // 
+            this.GHICHU.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.GHICHU.AppearanceHeader.Options.UseFont = true;
+            this.GHICHU.Caption = "GHI CHÚ";
+            this.GHICHU.FieldName = "GHICHU";
+            this.GHICHU.MaxWidth = 250;
+            this.GHICHU.MinWidth = 200;
+            this.GHICHU.Name = "GHICHU";
+            this.GHICHU.Visible = true;
+            this.GHICHU.VisibleIndex = 6;
+            this.GHICHU.Width = 200;
+            // 
             // IDNV
             // 
             this.IDNV.Caption = "MANV";
@@ -507,19 +509,6 @@
             this.IDLOAICA.MinWidth = 25;
             this.IDLOAICA.Name = "IDLOAICA";
             this.IDLOAICA.Width = 94;
-            // 
-            // GHICHU
-            // 
-            this.GHICHU.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
-            this.GHICHU.AppearanceHeader.Options.UseFont = true;
-            this.GHICHU.Caption = "GHI CHÚ";
-            this.GHICHU.FieldName = "GHICHU";
-            this.GHICHU.MaxWidth = 250;
-            this.GHICHU.MinWidth = 200;
-            this.GHICHU.Name = "GHICHU";
-            this.GHICHU.Visible = true;
-            this.GHICHU.VisibleIndex = 6;
-            this.GHICHU.Width = 200;
             // 
             // frmTangCa
             // 
@@ -561,7 +550,6 @@
         private DevExpress.XtraBars.BarButtonItem btnXoa;
         private DevExpress.XtraBars.BarButtonItem btnLuu;
         private DevExpress.XtraBars.BarButtonItem btnHuy;
-        private DevExpress.XtraBars.BarButtonItem btnPrint;
         private DevExpress.XtraBars.BarButtonItem btnDong;
         private DevExpress.XtraBars.Bar bar3;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;

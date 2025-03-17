@@ -41,7 +41,6 @@ namespace QLNHANSU.TINHLUONG
             btnSua.Enabled = kt;
             btnXoa.Enabled = kt;
             btnDong.Enabled = kt;
-            btnPrint.Enabled = kt;
             txtNoiDung.Enabled = !kt;
             spSoTien.Enabled = !kt;
             lkNhanVien.Enabled = !kt;
@@ -95,10 +94,7 @@ namespace QLNHANSU.TINHLUONG
             _showHide(true);
         }
 
-        private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
+        
 
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {

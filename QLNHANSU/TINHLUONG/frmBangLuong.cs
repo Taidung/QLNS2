@@ -9,6 +9,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
 using BusinessLayer;
+using DevExpress.XtraReports.UI;
+using QLNHANSU.Reposts;
+using DataLayer;
 
 namespace QLNHANSU.TINHLUONG
 {
@@ -19,6 +22,8 @@ namespace QLNHANSU.TINHLUONG
             InitializeComponent();
 		}
         BANGLUONG _bangluong;
+        List<tb_BANGLUONG> _lstBangLuong;
+        int _namky;
         private void frmBangLuong_Load(object sender, EventArgs e)
         {
             _bangluong = new BANGLUONG();
@@ -36,10 +41,13 @@ namespace QLNHANSU.TINHLUONG
         {
             gcDanhSach.DataSource = _bangluong.getList(int.Parse(cboNam.Text) * 100 + int.Parse(cboThang.Text));
             gvDanhSach.OptionsBehavior.Editable = false;
+            _lstBangLuong = _bangluong.getList(int.Parse(cboNam.Text) * 100 + int.Parse(cboThang.Text));
+            _namky = int.Parse(cboNam.Text) * 100 + int.Parse(cboThang.Text);
         }
         private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            rptBangLuong rpt = new rptBangLuong(_lstBangLuong,_namky);
+            rpt.ShowPreviewDialog();
         }
 
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

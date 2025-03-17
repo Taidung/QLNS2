@@ -111,6 +111,12 @@
     <Compile Include="CHAMCONG\frmLoaiCong.Designer.cs">
       <DependentUpon>frmLoaiCong.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBoPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,12 @@
     <Compile Include="frmQuanLyLuong.Designer.cs">
       <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRestore.Designer.cs">
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +222,36 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QLNHANSU_Functions.cs" />
+    <Compile Include="Reposts\frmBangCongCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reposts\frmBangCongCT.Designer.cs">
+      <DependentUpon>frmBangCongCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reposts\frmBangCongCTNV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reposts\frmBangCongCTNV.Designer.cs">
+      <DependentUpon>frmBangCongCTNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reposts\rptBangCongCT.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reposts\rptBangCongCT.Designer.cs">
+      <DependentUpon>rptBangCongCT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reposts\rptBangCongTongHop.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reposts\rptBangCongTongHop.Designer.cs">
+      <DependentUpon>rptBangCongTongHop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reposts\rptBangLuong.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reposts\rptBangLuong.Designer.cs">
+      <DependentUpon>rptBangLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reposts\rptHopDongLaoDong.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -261,6 +303,9 @@
     <EmbeddedResource Include="CHAMCONG\frmLoaiCong.resx">
       <DependentUpon>frmLoaiCong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBackup.resx">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBoPhan.resx">
       <DependentUpon>frmBoPhan.cs</DependentUpon>
     </EmbeddedResource>
@@ -294,6 +339,9 @@
     <EmbeddedResource Include="frmQuanLyLuong.resx">
       <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRestore.resx">
+      <DependentUpon>frmRestore.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTest.resx">
       <DependentUpon>frmTest.cs</DependentUpon>
     </EmbeddedResource>
@@ -320,6 +368,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reposts\frmBangCongCT.resx">
+      <DependentUpon>frmBangCongCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reposts\frmBangCongCTNV.resx">
+      <DependentUpon>frmBangCongCTNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reposts\rptBangCongCT.resx">
+      <DependentUpon>rptBangCongCT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reposts\rptBangCongTongHop.resx">
+      <DependentUpon>rptBangCongTongHop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reposts\rptBangLuong.resx">
+      <DependentUpon>rptBangLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reposts\rptHopDongLaoDong.resx">
       <DependentUpon>rptHopDongLaoDong.cs</DependentUpon>
     </EmbeddedResource>

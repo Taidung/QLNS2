@@ -37,7 +37,6 @@ namespace QLNHANSU
             btnSua.Enabled = kt;
             btnXoa.Enabled = kt;
             btnDong.Enabled = kt;
-            btnPrint.Enabled = kt;
             txtTen.Enabled = !kt;
             txtDiaChi.Enabled = !kt;
             txtEmail.Enabled = !kt;

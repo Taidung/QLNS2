@@ -37,7 +37,6 @@
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnLuu = new DevExpress.XtraBars.BarButtonItem();
             this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPrint = new DevExpress.XtraBars.BarButtonItem();
             this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -58,7 +57,6 @@
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMaNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colHoTen = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             this.txtSoQD = new DevExpress.XtraEditors.TextEdit();
             this.gcDanhSach = new DevExpress.XtraGrid.GridControl();
             this.gvDanhSach = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -70,6 +68,7 @@
             this.NGAYNGHI = new DevExpress.XtraGrid.Columns.GridColumn();
             this.LYDO = new DevExpress.XtraGrid.Columns.GridColumn();
             this.GHICHU = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -100,8 +99,7 @@
             this.btnXoa,
             this.btnLuu,
             this.btnHuy,
-            this.btnDong,
-            this.btnPrint});
+            this.btnDong});
             this.barManager1.MainMenu = this.bar1;
             this.barManager1.MaxItemId = 7;
             this.barManager1.StatusBar = this.bar3;
@@ -121,7 +119,6 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnLuu, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnHuy, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPrint, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDong, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.OptionsBar.MultiLine = true;
             this.bar1.OptionsBar.UseWholeRow = true;
@@ -166,14 +163,6 @@
             this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Caption = "In";
-            this.btnPrint.Id = 6;
-            this.btnPrint.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrint.ImageOptions.SvgImage")));
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPrint_ItemClick);
             // 
             // btnDong
             // 
@@ -277,7 +266,7 @@
             this.dtNgayNghi.CustomFormat = "dd/MM/yyyy";
             this.dtNgayNghi.Font = new System.Drawing.Font("Tahoma", 10F);
             this.dtNgayNghi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgayNghi.Location = new System.Drawing.Point(754, 28);
+            this.dtNgayNghi.Location = new System.Drawing.Point(773, 26);
             this.dtNgayNghi.Name = "dtNgayNghi";
             this.dtNgayNghi.Size = new System.Drawing.Size(187, 28);
             this.dtNgayNghi.TabIndex = 28;
@@ -286,7 +275,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(675, 33);
+            this.labelControl6.Location = new System.Drawing.Point(694, 31);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(73, 21);
             this.labelControl6.TabIndex = 29;
@@ -320,7 +309,7 @@
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtGhiChu.Properties.Appearance.Options.UseFont = true;
-            this.txtGhiChu.Size = new System.Drawing.Size(881, 28);
+            this.txtGhiChu.Size = new System.Drawing.Size(912, 28);
             this.txtGhiChu.TabIndex = 21;
             // 
             // labelControl3
@@ -340,7 +329,7 @@
             this.txtLyDo.Name = "txtLyDo";
             this.txtLyDo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtLyDo.Properties.Appearance.Options.UseFont = true;
-            this.txtLyDo.Size = new System.Drawing.Size(459, 28);
+            this.txtLyDo.Size = new System.Drawing.Size(494, 28);
             this.txtLyDo.TabIndex = 19;
             // 
             // labelControl2
@@ -355,7 +344,7 @@
             // 
             // slkNhanVien
             // 
-            this.slkNhanVien.Location = new System.Drawing.Point(742, 63);
+            this.slkNhanVien.Location = new System.Drawing.Point(773, 64);
             this.slkNhanVien.MenuManager = this.barManager1;
             this.slkNhanVien.Name = "slkNhanVien";
             this.slkNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
@@ -401,16 +390,6 @@
             this.colHoTen.Visible = true;
             this.colHoTen.VisibleIndex = 1;
             this.colHoTen.Width = 200;
-            // 
-            // labelControl7
-            // 
-            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl7.Appearance.Options.UseFont = true;
-            this.labelControl7.Location = new System.Drawing.Point(663, 66);
-            this.labelControl7.Name = "labelControl7";
-            this.labelControl7.Size = new System.Drawing.Size(73, 21);
-            this.labelControl7.TabIndex = 18;
-            this.labelControl7.Text = "Nhân viên";
             // 
             // txtSoQD
             // 
@@ -556,6 +535,16 @@
             this.GHICHU.VisibleIndex = 4;
             this.GHICHU.Width = 250;
             // 
+            // labelControl7
+            // 
+            this.labelControl7.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl7.Appearance.Options.UseFont = true;
+            this.labelControl7.Location = new System.Drawing.Point(694, 67);
+            this.labelControl7.Name = "labelControl7";
+            this.labelControl7.Size = new System.Drawing.Size(73, 21);
+            this.labelControl7.TabIndex = 18;
+            this.labelControl7.Text = "Nhân viên";
+            // 
             // frmNhanVien_ThoiViec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -596,7 +585,6 @@
         private DevExpress.XtraBars.BarButtonItem btnXoa;
         private DevExpress.XtraBars.BarButtonItem btnLuu;
         private DevExpress.XtraBars.BarButtonItem btnHuy;
-        private DevExpress.XtraBars.BarButtonItem btnPrint;
         private DevExpress.XtraBars.BarButtonItem btnDong;
         private DevExpress.XtraBars.Bar bar3;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;
@@ -614,7 +602,6 @@
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn colMaNV;
         private DevExpress.XtraGrid.Columns.GridColumn colHoTen;
-        private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.TextEdit txtSoQD;
         private DevExpress.XtraGrid.GridControl gcDanhSach;
         private DevExpress.XtraGrid.Views.Grid.GridView gvDanhSach;
@@ -629,5 +616,6 @@
         private DevExpress.XtraEditors.LabelControl labelControl6;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraGrid.Columns.GridColumn NGAYNGHI;
+        private DevExpress.XtraEditors.LabelControl labelControl7;
     }
 }

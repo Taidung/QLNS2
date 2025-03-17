@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using BusinessLayer;
 using QLNHANSU.CHAMCONG;
+using QLNHANSU.Reposts;
 using QLNHANSU.TINHLUONG;
 
 namespace QLNHANSU {
@@ -171,6 +172,24 @@ namespace QLNHANSU {
         private void btnBangLuong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             openForm(typeof(frmBangLuong));
+        }
+
+        private void btnBangCongCT_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmBangCongCT frm = new frmBangCongCT();
+            frm.ShowDialog();
+        }
+
+        private void btnBackup_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmBackup frm = new frmBackup();
+            frm.ShowDialog();
+        }
+
+        private void btnPhucHoiDB_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmRestore frm = new frmRestore();
+            frm.ShowDialog();
         }
     }
 }

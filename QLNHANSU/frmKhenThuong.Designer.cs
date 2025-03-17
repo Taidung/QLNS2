@@ -37,7 +37,6 @@
             this.btnXoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnLuu = new DevExpress.XtraBars.BarButtonItem();
             this.btnHuy = new DevExpress.XtraBars.BarButtonItem();
-            this.btnPrint = new DevExpress.XtraBars.BarButtonItem();
             this.btnDong = new DevExpress.XtraBars.BarButtonItem();
             this.bar3 = new DevExpress.XtraBars.Bar();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -45,6 +44,12 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.dtNgay = new System.Windows.Forms.DateTimePicker();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.txtNoiDung = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtLyDo = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.slkNhanVien = new DevExpress.XtraEditors.SearchLookUpEdit();
             this.searchLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colMaNV = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -63,24 +68,18 @@
             this.NGAYKY = new DevExpress.XtraGrid.Columns.GridColumn();
             this.MANV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.HOTEN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.txtLyDo = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtNoiDung = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.dtNgay = new System.Windows.Forms.DateTimePicker();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoiDung.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slkNhanVien.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoQD.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDanhSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhSach)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNoiDung.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -99,8 +98,7 @@
             this.btnXoa,
             this.btnLuu,
             this.btnHuy,
-            this.btnDong,
-            this.btnPrint});
+            this.btnDong});
             this.barManager1.MainMenu = this.bar1;
             this.barManager1.MaxItemId = 7;
             this.barManager1.StatusBar = this.bar3;
@@ -120,7 +118,6 @@
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnXoa, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnLuu, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnHuy, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnPrint, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.btnDong, "", true, true, true, 0, null, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.OptionsBar.MultiLine = true;
             this.bar1.OptionsBar.UseWholeRow = true;
@@ -165,14 +162,6 @@
             this.btnHuy.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnHuy.ImageOptions.SvgImage")));
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnHuy_ItemClick);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.Caption = "In";
-            this.btnPrint.Id = 6;
-            this.btnPrint.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnPrint.ImageOptions.SvgImage")));
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnPrint_ItemClick);
             // 
             // btnDong
             // 
@@ -258,6 +247,66 @@
             this.splitContainer1.Size = new System.Drawing.Size(1367, 729);
             this.splitContainer1.SplitterDistance = 233;
             this.splitContainer1.TabIndex = 8;
+            // 
+            // dtNgay
+            // 
+            this.dtNgay.CustomFormat = "dd/MM/yyyy";
+            this.dtNgay.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.dtNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtNgay.Location = new System.Drawing.Point(175, 132);
+            this.dtNgay.Name = "dtNgay";
+            this.dtNgay.Size = new System.Drawing.Size(187, 28);
+            this.dtNgay.TabIndex = 23;
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(102, 136);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(37, 21);
+            this.labelControl4.TabIndex = 24;
+            this.labelControl4.Text = "Ngày";
+            // 
+            // txtNoiDung
+            // 
+            this.txtNoiDung.Location = new System.Drawing.Point(175, 98);
+            this.txtNoiDung.MenuManager = this.barManager1;
+            this.txtNoiDung.Name = "txtNoiDung";
+            this.txtNoiDung.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtNoiDung.Properties.Appearance.Options.UseFont = true;
+            this.txtNoiDung.Size = new System.Drawing.Size(604, 28);
+            this.txtNoiDung.TabIndex = 21;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(102, 105);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(65, 21);
+            this.labelControl3.TabIndex = 22;
+            this.labelControl3.Text = "Nội dung";
+            // 
+            // txtLyDo
+            // 
+            this.txtLyDo.Location = new System.Drawing.Point(175, 64);
+            this.txtLyDo.MenuManager = this.barManager1;
+            this.txtLyDo.Name = "txtLyDo";
+            this.txtLyDo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtLyDo.Properties.Appearance.Options.UseFont = true;
+            this.txtLyDo.Size = new System.Drawing.Size(604, 28);
+            this.txtLyDo.TabIndex = 19;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(102, 71);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(39, 21);
+            this.labelControl2.TabIndex = 20;
+            this.labelControl2.Text = "Lý do";
             // 
             // slkNhanVien
             // 
@@ -478,68 +527,8 @@
             this.HOTEN.MinWidth = 200;
             this.HOTEN.Name = "HOTEN";
             this.HOTEN.Visible = true;
-            this.HOTEN.VisibleIndex = 5;
+            this.HOTEN.VisibleIndex = 4;
             this.HOTEN.Width = 200;
-            // 
-            // txtLyDo
-            // 
-            this.txtLyDo.Location = new System.Drawing.Point(175, 64);
-            this.txtLyDo.MenuManager = this.barManager1;
-            this.txtLyDo.Name = "txtLyDo";
-            this.txtLyDo.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.txtLyDo.Properties.Appearance.Options.UseFont = true;
-            this.txtLyDo.Size = new System.Drawing.Size(604, 28);
-            this.txtLyDo.TabIndex = 19;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(102, 71);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(39, 21);
-            this.labelControl2.TabIndex = 20;
-            this.labelControl2.Text = "Lý do";
-            // 
-            // txtNoiDung
-            // 
-            this.txtNoiDung.Location = new System.Drawing.Point(175, 98);
-            this.txtNoiDung.MenuManager = this.barManager1;
-            this.txtNoiDung.Name = "txtNoiDung";
-            this.txtNoiDung.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.txtNoiDung.Properties.Appearance.Options.UseFont = true;
-            this.txtNoiDung.Size = new System.Drawing.Size(604, 28);
-            this.txtNoiDung.TabIndex = 21;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(102, 105);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(65, 21);
-            this.labelControl3.TabIndex = 22;
-            this.labelControl3.Text = "Nội dung";
-            // 
-            // dtNgay
-            // 
-            this.dtNgay.CustomFormat = "dd/MM/yyyy";
-            this.dtNgay.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.dtNgay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgay.Location = new System.Drawing.Point(175, 132);
-            this.dtNgay.Name = "dtNgay";
-            this.dtNgay.Size = new System.Drawing.Size(187, 28);
-            this.dtNgay.TabIndex = 23;
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(102, 136);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(37, 21);
-            this.labelControl4.TabIndex = 24;
-            this.labelControl4.Text = "Ngày";
             // 
             // frmKhenThuong
             // 
@@ -560,13 +549,13 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtNoiDung.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slkNhanVien.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.searchLookUpEdit1View)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSoQD.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDanhSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhSach)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtLyDo.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtNoiDung.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -581,7 +570,6 @@
         private DevExpress.XtraBars.BarButtonItem btnXoa;
         private DevExpress.XtraBars.BarButtonItem btnLuu;
         private DevExpress.XtraBars.BarButtonItem btnHuy;
-        private DevExpress.XtraBars.BarButtonItem btnPrint;
         private DevExpress.XtraBars.BarButtonItem btnDong;
         private DevExpress.XtraBars.Bar bar3;
         private DevExpress.XtraBars.BarDockControl barDockControlTop;

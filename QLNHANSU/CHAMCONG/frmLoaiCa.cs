@@ -37,7 +37,6 @@ namespace QLNHANSU.CHAMCONG
             btnSua.Enabled = kt;
             btnXoa.Enabled = kt;
             btnDong.Enabled = kt;
-            btnPrint.Enabled = kt;
             txtTen.Enabled = !kt;
             spHeSo.Enabled = !kt;
         }

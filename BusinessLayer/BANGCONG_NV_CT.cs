@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using DataLayer;
@@ -13,6 +15,10 @@ namespace BusinessLayer
         public tb_BANGCONG_NV_CT getItem(int makycong, int manv, int ngay)
         {
             return db.tb_BANGCONG_NV_CT.FirstOrDefault(x => x.MAKYCONG == makycong && x.MANV == manv && x.NGAY.Value.Day == ngay);
+        }
+        public List<tb_BANGCONG_NV_CT> getBangCongCT(int makycong, int manv)
+        {
+            return db.tb_BANGCONG_NV_CT.Where(x => x.MAKYCONG == makycong && x.MANV == manv).ToList();
         }
         public tb_BANGCONG_NV_CT Add(tb_BANGCONG_NV_CT bcct)
         {

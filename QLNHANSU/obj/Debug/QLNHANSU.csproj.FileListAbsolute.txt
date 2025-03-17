@@ -118,3 +118,10 @@ D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.frmWaiting.resources
 D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.CHAMCONG.frmCapNhatNgayCong.resources
 D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.TINHLUONG.frmUngLuong.resources
 D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.TINHLUONG.frmBangLuong.resources
+D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Reposts.rptBangLuong.resources
+D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Reposts.rptBangCongTongHop.resources
+D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Reposts.frmBangCongCT.resources
+D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Reposts.frmBangCongCTNV.resources
+D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.Reposts.rptBangCongCTNV.resources
+D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.frmBackup.resources
+D:\QUANLYNHANSU\QLNHANSU\obj\Debug\QLNHANSU.frmRestore.resources

@@ -37,10 +37,10 @@
             this.rdgNgayNghi = new DevExpress.XtraEditors.RadioGroup();
             this.btnThoat = new DevExpress.XtraEditors.SimpleButton();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
-            this.lblThongTin = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
             this.lblHoTen = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
+            this.lblThongTin = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.rdgChamCong.Properties)).BeginInit();
@@ -88,7 +88,6 @@
             this.rdgChamCong.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("P", "Nghỉ phép"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("V", "Vắng"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("VR", "Việc riêng"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("CT", "Công tác")});
             this.rdgChamCong.Size = new System.Drawing.Size(239, 110);
             this.rdgChamCong.TabIndex = 0;
@@ -142,33 +141,13 @@
             this.groupControl3.TabIndex = 5;
             this.groupControl3.Text = "Thông tin";
             // 
-            // lblThongTin
-            // 
-            this.lblThongTin.AutoSize = true;
-            this.lblThongTin.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblThongTin.Location = new System.Drawing.Point(5, 28);
-            this.lblThongTin.Name = "lblThongTin";
-            this.lblThongTin.Size = new System.Drawing.Size(29, 18);
-            this.lblThongTin.TabIndex = 0;
-            this.lblThongTin.Text = "ID:";
-            // 
-            // lblID
-            // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblID.Location = new System.Drawing.Point(73, 28);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(54, 23);
-            this.lblID.TabIndex = 1;
-            this.lblID.Text = "IDNV";
-            // 
             // lblHoTen
             // 
             this.lblHoTen.AutoSize = true;
             this.lblHoTen.Font = new System.Drawing.Font("Tahoma", 9F);
             this.lblHoTen.Location = new System.Drawing.Point(73, 56);
             this.lblHoTen.Name = "lblHoTen";
-            this.lblHoTen.Size = new System.Drawing.Size(65, 23);
+            this.lblHoTen.Size = new System.Drawing.Size(52, 18);
             this.lblHoTen.TabIndex = 3;
             this.lblHoTen.Text = "Họ tên";
             // 
@@ -178,9 +157,29 @@
             this.label3.Font = new System.Drawing.Font("Tahoma", 9F);
             this.label3.Location = new System.Drawing.Point(5, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 23);
+            this.label3.Size = new System.Drawing.Size(57, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Họ tên:";
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblID.Location = new System.Drawing.Point(73, 28);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(43, 18);
+            this.lblID.TabIndex = 1;
+            this.lblID.Text = "IDNV";
+            // 
+            // lblThongTin
+            // 
+            this.lblThongTin.AutoSize = true;
+            this.lblThongTin.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblThongTin.Location = new System.Drawing.Point(5, 28);
+            this.lblThongTin.Name = "lblThongTin";
+            this.lblThongTin.Size = new System.Drawing.Size(29, 18);
+            this.lblThongTin.TabIndex = 0;
+            this.lblThongTin.Text = "ID:";
             // 
             // frmCapNhatNgayCong
             // 

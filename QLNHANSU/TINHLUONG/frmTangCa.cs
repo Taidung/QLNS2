@@ -46,7 +46,6 @@ namespace QLNHANSU.TINHLUONG
             btnSua.Enabled = kt;
             btnXoa.Enabled = kt;
             btnDong.Enabled = kt;
-            btnPrint.Enabled = kt;
             txtNoiDung.Enabled = !kt;
             spSoGio.Enabled = !kt;
             lkNhanVien.Enabled = !kt;
