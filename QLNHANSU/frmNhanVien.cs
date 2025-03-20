@@ -256,11 +256,12 @@ namespace QLNHANSU
             OpenFileDialog openFile = new OpenFileDialog();
             openFile.Filter = "Picture file (.png, .jpg)|*.png;*.jpg";
             openFile.Title = "Chọn hình ảnh";
-            if (openFile.ShowDialog()==DialogResult.OK)
+            if (openFile.ShowDialog() == DialogResult.OK)
             {
                 picHinhAnh.Image = Image.FromFile(openFile.FileName);
                 picHinhAnh.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
+
     }
 }

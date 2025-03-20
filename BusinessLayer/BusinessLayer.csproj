@@ -82,6 +82,7 @@
     <Compile Include="PHUCAP.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TANGCA.cs" />
+    <Compile Include="USER.cs" />
     <Compile Include="TONGIAO.cs" />
     <Compile Include="TRINHDO.cs" />
     <Compile Include="UNGLUONG.cs" />

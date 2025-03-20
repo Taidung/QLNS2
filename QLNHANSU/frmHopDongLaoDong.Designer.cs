@@ -317,8 +317,9 @@
             this.cboThoiHan.Items.AddRange(new object[] {
             "3 tháng",
             "6 tháng",
-            "12 tháng"});
-            this.cboThoiHan.Location = new System.Drawing.Point(911, 33);
+            "12 tháng",
+            "24 tháng"});
+            this.cboThoiHan.Location = new System.Drawing.Point(922, 33);
             this.cboThoiHan.Name = "cboThoiHan";
             this.cboThoiHan.Size = new System.Drawing.Size(136, 24);
             this.cboThoiHan.TabIndex = 12;
@@ -327,7 +328,7 @@
             // 
             this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(841, 33);
+            this.labelControl9.Location = new System.Drawing.Point(852, 33);
             this.labelControl9.Name = "labelControl9";
             this.labelControl9.Size = new System.Drawing.Size(64, 21);
             this.labelControl9.TabIndex = 21;

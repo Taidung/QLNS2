@@ -53,7 +53,6 @@ namespace QLNHANSU.CHAMCONG
             _them = true;
             cboNam.Text = DateTime.Now.Year.ToString();
             cboThang.Text = DateTime.Now.Month.ToString();
-            chkKhoa.Checked = false;
             chkTrangThai.Checked = false;
         }
 
@@ -86,11 +85,6 @@ namespace QLNHANSU.CHAMCONG
             _showHide(true);
         }
 
-        private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
@@ -103,7 +97,6 @@ namespace QLNHANSU.CHAMCONG
                 kc.MAKYCONG = int.Parse(cboNam.Text) * 100 + int.Parse(cboThang.Text);
                 kc.NAM = int.Parse(cboNam.Text);
                 kc.THANG = int.Parse(cboThang.Text);
-                kc.KHOA = chkKhoa.Checked;
                 kc.TRANGTHAI = chkTrangThai.Checked;
                 kc.MACTY = 1;
                 kc.NGAYCONGTRONGTHANG = QLNHANSU_Functions.demSoNgayLamViecTrongThang(int.Parse(cboThang.Text), int.Parse(cboNam.Text));
@@ -118,7 +111,6 @@ namespace QLNHANSU.CHAMCONG
                 kc.MAKYCONG = int.Parse(cboNam.Text) * 100 + int.Parse(cboThang.Text);
                 kc.NAM = int.Parse(cboNam.Text);
                 kc.THANG = int.Parse(cboThang.Text);
-                kc.KHOA = chkKhoa.Checked;
                 kc.TRANGTHAI = chkTrangThai.Checked;
                 kc.NGAYCONGTRONGTHANG = QLNHANSU_Functions.demSoNgayLamViecTrongThang(int.Parse(cboThang.Text), int.Parse(cboNam.Text));
                 kc.NGAYTINHCONG = DateTime.Now;
@@ -135,7 +127,6 @@ namespace QLNHANSU.CHAMCONG
                 _makycong= int.Parse(gvDanhSach.GetFocusedRowCellValue("MAKYCONG").ToString());
                 cboNam.Text = gvDanhSach.GetFocusedRowCellValue("NAM").ToString();
                 cboThang.Text = gvDanhSach.GetFocusedRowCellValue("THANG").ToString();
-                chkKhoa.Checked = bool.Parse(gvDanhSach.GetFocusedRowCellValue("KHOA").ToString());
                 chkTrangThai.Checked = bool.Parse(gvDanhSach.GetFocusedRowCellValue("TRANGTHAI").ToString());
             }
         }

@@ -46,6 +46,7 @@
         <EntityTypeShape EntityType="QLNHANSUModel.tb_BANGLUONG" Width="1.5" PointX="15.375" PointY="0.75" />
         <EntityTypeShape EntityType="QLNHANSUModel.tb_HOPDONG" Width="1.5" PointX="5.25" PointY="9.5" />
         <AssociationConnector Association="QLNHANSUModel.FK_tb_HOPDONG_tb_NHANVIEN" />
+        <EntityTypeShape EntityType="QLNHANSUModel.tb_Users" Width="1.5" PointX="15.375" PointY="6.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

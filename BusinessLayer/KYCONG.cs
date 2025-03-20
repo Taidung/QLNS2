@@ -38,7 +38,7 @@ namespace BusinessLayer
                 var _kc = db.tb_KYCONG.FirstOrDefault(x => x.MAKYCONG== kc.MAKYCONG);
                 _kc.MAKYCONG = kc.MAKYCONG;
                 _kc.NAM = kc.NAM;
-                _kc.KHOA = kc.KHOA;
+                _kc.THANG = kc.THANG;
                 _kc.NGAYCONGTRONGTHANG = kc.NGAYCONGTRONGTHANG;
                 _kc.NGAYTINHCONG = kc.NGAYTINHCONG;
                 _kc.TRANGTHAI = kc.TRANGTHAI;

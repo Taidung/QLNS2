@@ -412,6 +412,14 @@
     <Property Name="DELETED_BY" Type="int" />
     <Property Name="DELETED_DATE" Type="datetime" />
   </EntityType>
+  <EntityType Name="tb_Users">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <Association Name="FK_tb_BANGCONG_tb_LOAICONG">
     <End Role="tb_LOAICONG" Type="Self.tb_LOAICONG" Multiplicity="0..1" />
     <End Role="tb_BANGCONG" Type="Self.tb_BANGCONG" Multiplicity="*" />
@@ -619,6 +627,7 @@
     <EntitySet Name="tb_TONGIAO" EntityType="Self.tb_TONGIAO" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_TRINHDO" EntityType="Self.tb_TRINHDO" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tb_UNGLUONG" EntityType="Self.tb_UNGLUONG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tb_Users" EntityType="Self.tb_Users" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_tb_BANGCONG_tb_LOAICONG" Association="Self.FK_tb_BANGCONG_tb_LOAICONG">
       <End Role="tb_LOAICONG" EntitySet="tb_LOAICONG" />
       <End Role="tb_BANGCONG" EntitySet="tb_BANGCONG" />

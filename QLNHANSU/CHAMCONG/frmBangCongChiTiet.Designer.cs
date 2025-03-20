@@ -198,7 +198,7 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1298, 30);
+            this.barDockControlTop.Size = new System.Drawing.Size(1501, 30);
             // 
             // barDockControlBottom
             // 
@@ -206,7 +206,7 @@
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 724);
             this.barDockControlBottom.Manager = this.barManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1298, 20);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1501, 20);
             // 
             // barDockControlLeft
             // 
@@ -220,7 +220,7 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1298, 30);
+            this.barDockControlRight.Location = new System.Drawing.Point(1501, 30);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 694);
             // 
@@ -242,7 +242,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gcBangCongChiTiet);
-            this.splitContainer1.Size = new System.Drawing.Size(1298, 694);
+            this.splitContainer1.Size = new System.Drawing.Size(1501, 694);
             this.splitContainer1.SplitterDistance = 94;
             this.splitContainer1.TabIndex = 9;
             // 
@@ -311,7 +311,7 @@
             this.gcBangCongChiTiet.MainView = this.gvBangCongChiTiet;
             this.gcBangCongChiTiet.MenuManager = this.barManager1;
             this.gcBangCongChiTiet.Name = "gcBangCongChiTiet";
-            this.gcBangCongChiTiet.Size = new System.Drawing.Size(1298, 596);
+            this.gcBangCongChiTiet.Size = new System.Drawing.Size(1501, 596);
             this.gcBangCongChiTiet.TabIndex = 0;
             this.gcBangCongChiTiet.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gvBangCongChiTiet});
@@ -1004,7 +1004,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 744);
+            this.ClientSize = new System.Drawing.Size(1501, 744);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);

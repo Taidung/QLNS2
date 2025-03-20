@@ -271,7 +271,7 @@
             0,
             0,
             0});
-            this.spHSLMoi.Location = new System.Drawing.Point(1355, 33);
+            this.spHSLMoi.Location = new System.Drawing.Point(1263, 30);
             this.spHSLMoi.MenuManager = this.barManager1;
             this.spHSLMoi.Name = "spHSLMoi";
             this.spHSLMoi.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
@@ -285,7 +285,7 @@
             // 
             this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(1261, 36);
+            this.labelControl8.Location = new System.Drawing.Point(1197, 33);
             this.labelControl8.Name = "labelControl8";
             this.labelControl8.Size = new System.Drawing.Size(60, 21);
             this.labelControl8.TabIndex = 33;
@@ -298,7 +298,7 @@
             0,
             0,
             0});
-            this.spHSLCu.Location = new System.Drawing.Point(1092, 30);
+            this.spHSLCu.Location = new System.Drawing.Point(1035, 30);
             this.spHSLCu.MenuManager = this.barManager1;
             this.spHSLCu.Name = "spHSLCu";
             this.spHSLCu.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
@@ -313,7 +313,7 @@
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(998, 33);
+            this.labelControl5.Location = new System.Drawing.Point(941, 33);
             this.labelControl5.Name = "labelControl5";
             this.labelControl5.Size = new System.Drawing.Size(88, 21);
             this.labelControl5.TabIndex = 31;
@@ -334,7 +334,7 @@
             this.dtNgayLenLuong.CustomFormat = "dd/MM/yyyy";
             this.dtNgayLenLuong.Font = new System.Drawing.Font("Tahoma", 10F);
             this.dtNgayLenLuong.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgayLenLuong.Location = new System.Drawing.Point(791, 30);
+            this.dtNgayLenLuong.Location = new System.Drawing.Point(747, 30);
             this.dtNgayLenLuong.Name = "dtNgayLenLuong";
             this.dtNgayLenLuong.Size = new System.Drawing.Size(187, 28);
             this.dtNgayLenLuong.TabIndex = 28;
@@ -343,7 +343,7 @@
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(675, 33);
+            this.labelControl6.Location = new System.Drawing.Point(631, 35);
             this.labelControl6.Name = "labelControl6";
             this.labelControl6.Size = new System.Drawing.Size(110, 21);
             this.labelControl6.TabIndex = 29;
@@ -354,7 +354,7 @@
             this.dtNgayKy.CustomFormat = "dd/MM/yyyy";
             this.dtNgayKy.Font = new System.Drawing.Font("Tahoma", 10F);
             this.dtNgayKy.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtNgayKy.Location = new System.Drawing.Point(482, 30);
+            this.dtNgayKy.Location = new System.Drawing.Point(438, 30);
             this.dtNgayKy.Name = "dtNgayKy";
             this.dtNgayKy.Size = new System.Drawing.Size(187, 28);
             this.dtNgayKy.TabIndex = 23;
@@ -391,12 +391,12 @@
             // 
             // txtNhanVien
             // 
-            this.txtNhanVien.Location = new System.Drawing.Point(574, 62);
+            this.txtNhanVien.Location = new System.Drawing.Point(574, 64);
             this.txtNhanVien.MenuManager = this.barManager1;
             this.txtNhanVien.Name = "txtNhanVien";
             this.txtNhanVien.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtNhanVien.Properties.Appearance.Options.UseFont = true;
-            this.txtNhanVien.Size = new System.Drawing.Size(459, 28);
+            this.txtNhanVien.Size = new System.Drawing.Size(482, 28);
             this.txtNhanVien.TabIndex = 19;
             // 
             // labelControl2
@@ -411,7 +411,7 @@
             // 
             // slkHopDong
             // 
-            this.slkHopDong.Location = new System.Drawing.Point(175, 62);
+            this.slkHopDong.Location = new System.Drawing.Point(175, 64);
             this.slkHopDong.MenuManager = this.barManager1;
             this.slkHopDong.Name = "slkHopDong";
             this.slkHopDong.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);

@@ -79,9 +79,9 @@ namespace QLNHANSU.TINHLUONG
             _showHide(false);
             _them = true;
             txtNoiDung.Text = string.Empty;
-            spSoTien.EditValue = 0;
-            lkNhanVien.EditValue = 0;
-            cboPhuCap.SelectedIndex = 0;
+            //spSoTien.EditValue = 0;
+            //lkNhanVien.EditValue = 0;
+            //cboPhuCap.SelectedIndex = 0;
         }
 
         private void btnSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -112,12 +112,6 @@ namespace QLNHANSU.TINHLUONG
             _them = false;
             _showHide(true);
         }
-
-        private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
@@ -170,6 +164,11 @@ namespace QLNHANSU.TINHLUONG
                 e.Graphics.DrawImage(img, e.Bounds.X, e.Bounds.Y);
                 e.Handled = true;
             }
+        }
+
+        private void cboPhuCap_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

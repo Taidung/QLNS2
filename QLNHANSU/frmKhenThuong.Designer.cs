@@ -384,9 +384,9 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(102, 37);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(46, 21);
+            this.labelControl1.Size = new System.Drawing.Size(47, 21);
             this.labelControl1.TabIndex = 8;
-            this.labelControl1.Text = "Số HĐ";
+            this.labelControl1.Text = "Số QĐ";
             // 
             // gcDanhSach
             // 

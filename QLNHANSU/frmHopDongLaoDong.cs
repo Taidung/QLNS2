@@ -13,6 +13,8 @@ using BusinessLayer;
 using QLNHANSU.Reposts;
 using DevExpress.XtraReports.UI;
 using BusinessLayer.DTO;
+using System.Text.RegularExpressions;
+using DevExpress.XtraRichEdit.API.Native;
 
 namespace QLNHANSU
 {

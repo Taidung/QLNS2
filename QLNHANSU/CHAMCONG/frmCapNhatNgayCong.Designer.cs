@@ -75,7 +75,7 @@
             this.groupControl1.Controls.Add(this.rdgChamCong);
             this.groupControl1.Location = new System.Drawing.Point(335, 32);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(243, 140);
+            this.groupControl1.Size = new System.Drawing.Size(243, 115);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Chấm công";
             // 
@@ -87,9 +87,8 @@
             this.rdgChamCong.Name = "rdgChamCong";
             this.rdgChamCong.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("P", "Nghỉ phép"),
-            new DevExpress.XtraEditors.Controls.RadioGroupItem("V", "Vắng"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("CT", "Công tác")});
-            this.rdgChamCong.Size = new System.Drawing.Size(239, 110);
+            this.rdgChamCong.Size = new System.Drawing.Size(239, 85);
             this.rdgChamCong.TabIndex = 0;
             // 
             // groupControl2
@@ -97,9 +96,9 @@
             this.groupControl2.AppearanceCaption.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.rdgNgayNghi);
-            this.groupControl2.Location = new System.Drawing.Point(333, 178);
+            this.groupControl2.Location = new System.Drawing.Point(333, 153);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(243, 97);
+            this.groupControl2.Size = new System.Drawing.Size(243, 122);
             this.groupControl2.TabIndex = 3;
             this.groupControl2.Text = "Thời gian nghỉ";
             // 
@@ -114,7 +113,7 @@
             new DevExpress.XtraEditors.Controls.RadioGroupItem("s", "Sáng"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("C", "Chiều"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("NN", "Nguyên ngày")});
-            this.rdgNgayNghi.Size = new System.Drawing.Size(239, 67);
+            this.rdgNgayNghi.Size = new System.Drawing.Size(239, 92);
             this.rdgNgayNghi.TabIndex = 0;
             // 
             // btnThoat

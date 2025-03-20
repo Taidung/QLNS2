@@ -51,5 +51,6 @@ namespace DataLayer
         public virtual DbSet<tb_BANGCONG_NV_CT> tb_BANGCONG_NV_CT { get; set; }
         public virtual DbSet<tb_BANGLUONG> tb_BANGLUONG { get; set; }
         public virtual DbSet<tb_HOPDONG> tb_HOPDONG { get; set; }
+        public virtual DbSet<tb_Users> tb_Users { get; set; }
     }
 }

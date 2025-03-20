@@ -11,10 +11,21 @@ namespace QLNHANSU {
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main() {
+        static void Main()
+        {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+
+            using (var loginForm = new QLNHANSU.Login.Login())
+            {
+                // Hiển thị form login dưới dạng Dialog
+                if (loginForm.ShowDialog() == DialogResult.OK)
+                {
+                    // Chỉ chạy MainForm khi đăng nhập thành công
+                    Application.Run(new MainForm());
+                }
+            }
         }
+
     }
 }

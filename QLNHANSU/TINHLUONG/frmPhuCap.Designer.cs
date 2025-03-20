@@ -262,6 +262,7 @@
             this.cboPhuCap.Name = "cboPhuCap";
             this.cboPhuCap.Size = new System.Drawing.Size(141, 24);
             this.cboPhuCap.TabIndex = 7;
+            this.cboPhuCap.SelectedIndexChanged += new System.EventHandler(this.cboPhuCap_SelectedIndexChanged_1);
             // 
             // labelControl3
             // 
@@ -535,8 +536,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn TENPC;
         private DevExpress.XtraEditors.TextEdit txtNoiDung;
         private DevExpress.XtraEditors.LabelControl labelControl4;
-        private System.Windows.Forms.ComboBox cboPhuCap;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SearchLookUpEdit lkNhanVien;
         private DevExpress.XtraGrid.Views.Grid.GridView searchLookUpEdit1View;
         private DevExpress.XtraGrid.Columns.GridColumn MANV;
@@ -546,5 +545,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn NOIDUNG;
         private DevExpress.XtraGrid.Columns.GridColumn IDNV;
         private DevExpress.XtraGrid.Columns.GridColumn IDPC;
+        private System.Windows.Forms.ComboBox cboPhuCap;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
     }
 }

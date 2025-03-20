@@ -34,7 +34,7 @@ namespace BusinessLayer
                 nvpc.TENPC = pc.TENPC;
                 nvpc.NOIDUNG = item.NOIDUNG;
                 nvpc.NGAY = item.NGAY;
-                nvpc.SOTIEN = item.SOTIEN;
+                nvpc.SOTIEN = pc.SOTIEN;
                 nvpc.CREATED_BY = item.CREATED_BY;
                 nvpc.CREATED_DATE = item.CREATED_DATE;
                 nvpc.UPDATED_BY = item.UPDATED_BY;

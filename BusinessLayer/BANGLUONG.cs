@@ -20,7 +20,7 @@ namespace BusinessLayer
         }
         public void TinhLuongNhanVien(int makycong)
         {
-            double luongngaythuong, luongphep, luongtangca, luongchunhat, luongngayle, phucap, tangca, ungluong, thuclanh, hesoluong;
+            double luongngaythuong, luongphep, luongtangca, luongchunhat, luongngayle, phucap, ungluong, thuclanh, hesoluong;
             var lstNV = db.tb_NHANVIEN.Where(x => x.DATHOIVIEC == null).ToList();
             foreach (var item in lstNV)
             {

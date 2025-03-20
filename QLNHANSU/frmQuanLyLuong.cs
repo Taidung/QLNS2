@@ -109,12 +109,6 @@ namespace QLNHANSU
             _showHide(true);
             splitContainer1.Panel1Collapsed = true;
         }
-
-        private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
