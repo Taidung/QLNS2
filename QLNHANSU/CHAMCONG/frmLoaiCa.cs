@@ -122,7 +122,7 @@ namespace QLNHANSU.CHAMCONG
         {
             if (e.Column.Name=="DELETED_BY"&&e.CellValue!=null)
             {
-                Image img = Properties.Resources.dell;
+                Image img = Properties.Resources.del2;
                 e.Graphics.DrawImage(img, e.Bounds.X, e.Bounds.Y);
                 e.Handled = true;
             }

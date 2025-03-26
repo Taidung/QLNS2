@@ -189,6 +189,12 @@
     <Compile Include="frmQuanLyLuong.Designer.cs">
       <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQuanLyUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuanLyUser.Designer.cs">
+      <DependentUpon>frmQuanLyUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRestore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -360,6 +366,9 @@
     <EmbeddedResource Include="frmQuanLyLuong.resx">
       <DependentUpon>frmQuanLyLuong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmQuanLyUser.resx">
+      <DependentUpon>frmQuanLyUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRestore.resx">
       <DependentUpon>frmRestore.cs</DependentUpon>
     </EmbeddedResource>
@@ -454,6 +463,8 @@
     <None Include="Resources\dell.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\del2.png" />
+    <None Include="Resources\del3.png" />
     <Content Include="Resources\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

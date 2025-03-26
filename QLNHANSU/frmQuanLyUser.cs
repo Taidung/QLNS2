@@ -11,21 +11,21 @@ using DevExpress.XtraEditors;
 using BusinessLayer;
 using DataLayer;
 
-namespace QLNHANSU.CHAMCONG
+namespace QLNHANSU
 {
-	public partial class frmLoaiCong: DevExpress.XtraEditors.XtraForm
+	public partial class frmQuanLyUser: DevExpress.XtraEditors.XtraForm
 	{
-        public frmLoaiCong()
+        public frmQuanLyUser()
 		{
             InitializeComponent();
 		}
-        LOAICONG _loaicong;
+        USER _user;
         bool _them;
         int _id;
-        private void frmLoaiCong_Load(object sender, EventArgs e)
+        private void frmQuanLyUser_Load(object sender, EventArgs e)
         {
             _them = false;
-            _loaicong = new LOAICONG();
+            _user = new USER();
             _showHide(true);
             loadData();
         }
@@ -38,11 +38,10 @@ namespace QLNHANSU.CHAMCONG
             btnXoa.Enabled = kt;
             btnDong.Enabled = kt;
             txtTen.Enabled = !kt;
-            spHeSo.Enabled = !kt;
         }
         void loadData()
         {
-            gcDanhSach.DataSource = _loaicong.getList();
+            gcDanhSach.DataSource = _user.getList();
             gvDanhSach.OptionsBehavior.Editable = false;
         }
         private void btnThem_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -50,7 +49,8 @@ namespace QLNHANSU.CHAMCONG
             _showHide(false);
             _them = true;
             txtTen.Text = string.Empty;
-            spHeSo.EditValue = 1;
+            txtPassword.Text = string.Empty;
+            txtPhanQuyen.Text = string.Empty;
         }
 
         private void btnSua_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
@@ -63,7 +63,7 @@ namespace QLNHANSU.CHAMCONG
         {
             if (MessageBox.Show("Bạn có chắn chắn xoá không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                _loaicong.Delete(_id, 1);
+                _user.Delete(_id);
                 loadData();
             }
         }
@@ -82,11 +82,6 @@ namespace QLNHANSU.CHAMCONG
             _showHide(true);
         }
 
-        private void btnPrint_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-
-        }
-
         private void btnDong_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             this.Close();
@@ -95,42 +90,29 @@ namespace QLNHANSU.CHAMCONG
         {
             if (_them)
             {
-                tb_LOAICONG lc = new tb_LOAICONG();
-                lc.TENLC = txtTen.Text;
-                lc.HESO = double.Parse(spHeSo.EditValue.ToString());
-                lc.CREATED_BY = 1;
-                lc.CREATED_DATE = DateTime.Now;
-                _loaicong.Add(lc);
+                tb_Users user = new tb_Users();
+                user.username = txtTen.Text;
+                user.password = txtPassword.Text;
+                user.role = txtPhanQuyen.Text;
+                _user.Add(user);
             }
             else
             {
-                var lc = _loaicong.getItem(_id);
-                lc.TENLC = txtTen.Text;
-                lc.HESO = double.Parse(spHeSo.EditValue.ToString());
-                lc.UPDATED_BY = 1;
-                lc.UPDATED_DATE = DateTime.Now;
-                _loaicong.Update(lc);
+                var user = _user.getItem(_id);
+                user.username = txtTen.Text;
+                user.username = txtTen.Text;
+                user.password = txtPassword.Text;
+                user.role = txtPhanQuyen.Text;
+                _user.Update(user);
             }
         }
 
         private void gvDanhSach_Click(object sender, EventArgs e)
         {
-            if (gvDanhSach.RowCount > 0)
-            {
-                _id = int.Parse(gvDanhSach.GetFocusedRowCellValue("IDLC").ToString());
-                txtTen.Text = gvDanhSach.GetFocusedRowCellValue("TENLC").ToString();
-                spHeSo.Text = gvDanhSach.GetFocusedRowCellValue("HESO").ToString();
-            }
-        }
-
-        private void gvDanhSach_CustomDrawCell(object sender, DevExpress.XtraGrid.Views.Base.RowCellCustomDrawEventArgs e)
-        {
-            if (e.Column.Name == "DELETED_BY" && e.CellValue != null)
-            {
-                Image img = Properties.Resources.del2;
-                e.Graphics.DrawImage(img, e.Bounds.X, e.Bounds.Y);
-                e.Handled = true;
-            }
+            _id = int.Parse(gvDanhSach.GetFocusedRowCellValue("id").ToString());
+            txtTen.Text = gvDanhSach.GetFocusedRowCellValue("username").ToString();
+            txtPassword.Text = gvDanhSach.GetFocusedRowCellValue("password").ToString();
+            txtPhanQuyen.Text = gvDanhSach.GetFocusedRowCellValue("role").ToString();
         }
     }
 }

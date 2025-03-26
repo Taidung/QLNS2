@@ -196,5 +196,10 @@ namespace QLNHANSU {
         {
             openForm(typeof(frmKyLuat));
         }
+
+        private void btnQuanLyUser_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            openForm(typeof(frmQuanLyUser));
+        }
     }
 }

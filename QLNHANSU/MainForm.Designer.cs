@@ -66,6 +66,7 @@
             this.btnKyLuat = new DevExpress.XtraBars.BarButtonItem();
             this.btnQuanLyLuong = new DevExpress.XtraBars.BarButtonItem();
             this.btnBangCongCT = new DevExpress.XtraBars.BarButtonItem();
+            this.btnQuanLyUser = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
@@ -76,6 +77,7 @@
             this.tabbedView1 = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.documentManager1 = new DevExpress.XtraBars.Docking2010.DocumentManager(this.components);
             this.dockManager1 = new DevExpress.XtraBars.Docking.DockManager(this.components);
+            this.hideContainerRight = new DevExpress.XtraBars.Docking.AutoHideContainer();
             this.dockPanel1 = new DevExpress.XtraBars.Docking.DockPanel();
             this.dockPanel1_Container = new DevExpress.XtraBars.Docking.ControlContainer();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
@@ -86,6 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).BeginInit();
+            this.hideContainerRight.SuspendLayout();
             this.dockPanel1.SuspendLayout();
             this.dockPanel1_Container.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).BeginInit();
@@ -98,7 +101,6 @@
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(35, 37, 35, 37);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -126,17 +128,16 @@
             this.btnChucVu,
             this.btnKyLuat,
             this.btnQuanLyLuong,
-            this.btnBangCongCT});
+            this.btnBangCongCT,
+            this.btnQuanLyUser});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbonControl1.MaxItemId = 30;
+            this.ribbonControl1.MaxItemId = 31;
             this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.OptionsMenuMinWidth = 385;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
             this.ribbonPage2,
             this.ribbonPage3});
-            this.ribbonControl1.Size = new System.Drawing.Size(1669, 193);
+            this.ribbonControl1.Size = new System.Drawing.Size(1431, 158);
             // 
             // btnDanToc
             // 
@@ -343,6 +344,14 @@
             this.btnBangCongCT.Name = "btnBangCongCT";
             this.btnBangCongCT.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnBangCongCT_ItemClick);
             // 
+            // btnQuanLyUser
+            // 
+            this.btnQuanLyUser.Caption = "Quản lý User";
+            this.btnQuanLyUser.Id = 30;
+            this.btnQuanLyUser.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnQuanLyUser.ImageOptions.SvgImage")));
+            this.btnQuanLyUser.Name = "btnQuanLyUser";
+            this.btnQuanLyUser.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnQuanLyUser_ItemClick);
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -352,6 +361,7 @@
             // 
             // ribbonPageGroup1
             // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.btnQuanLyUser, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnBackup, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnPhucHoiDB, true);
             this.ribbonPageGroup1.ItemLinks.Add(this.btnThoat, true);
@@ -420,9 +430,9 @@
             // 
             // dockManager1
             // 
+            this.dockManager1.AutoHideContainers.AddRange(new DevExpress.XtraBars.Docking.AutoHideContainer[] {
+            this.hideContainerRight});
             this.dockManager1.Form = this;
-            this.dockManager1.RootPanels.AddRange(new DevExpress.XtraBars.Docking.DockPanel[] {
-            this.dockPanel1});
             this.dockManager1.TopZIndexControls.AddRange(new string[] {
             "DevExpress.XtraBars.BarDockControl",
             "DevExpress.XtraBars.StandaloneBarDockControl",
@@ -437,43 +447,59 @@
             "DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl",
             "DevExpress.XtraBars.ToolbarForm.ToolbarFormControl"});
             // 
+            // hideContainerRight
+            // 
+            this.hideContainerRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.hideContainerRight.Controls.Add(this.dockPanel1);
+            this.hideContainerRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.hideContainerRight.Location = new System.Drawing.Point(1410, 158);
+            this.hideContainerRight.Name = "hideContainerRight";
+            this.hideContainerRight.Size = new System.Drawing.Size(21, 534);
+            // 
             // dockPanel1
             // 
             this.dockPanel1.Controls.Add(this.dockPanel1_Container);
             this.dockPanel1.Dock = DevExpress.XtraBars.Docking.DockingStyle.Right;
             this.dockPanel1.ID = new System.Guid("033bb623-ebad-4793-8fcc-a979c99ec4b2");
-            this.dockPanel1.Location = new System.Drawing.Point(1383, 193);
+            this.dockPanel1.Location = new System.Drawing.Point(0, 0);
+            this.dockPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dockPanel1.Name = "dockPanel1";
             this.dockPanel1.OriginalSize = new System.Drawing.Size(286, 200);
-            this.dockPanel1.Size = new System.Drawing.Size(286, 659);
+            this.dockPanel1.SavedDock = DevExpress.XtraBars.Docking.DockingStyle.Right;
+            this.dockPanel1.SavedIndex = 0;
+            this.dockPanel1.Size = new System.Drawing.Size(286, 534);
             this.dockPanel1.Text = "Thông báo";
+            this.dockPanel1.Visibility = DevExpress.XtraBars.Docking.DockVisibility.AutoHide;
             // 
             // dockPanel1_Container
             // 
             this.dockPanel1_Container.Controls.Add(this.groupControl2);
             this.dockPanel1_Container.Controls.Add(this.groupControl1);
-            this.dockPanel1_Container.Location = new System.Drawing.Point(6, 32);
+            this.dockPanel1_Container.Location = new System.Drawing.Point(4, 26);
+            this.dockPanel1_Container.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dockPanel1_Container.Name = "dockPanel1_Container";
-            this.dockPanel1_Container.Size = new System.Drawing.Size(276, 623);
+            this.dockPanel1_Container.Size = new System.Drawing.Size(279, 505);
             this.dockPanel1_Container.TabIndex = 0;
             // 
             // groupControl2
             // 
             this.groupControl2.Controls.Add(this.lstLenLuong);
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupControl2.Location = new System.Drawing.Point(0, 219);
+            this.groupControl2.Location = new System.Drawing.Point(0, 178);
+            this.groupControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(276, 228);
+            this.groupControl2.Size = new System.Drawing.Size(279, 185);
             this.groupControl2.TabIndex = 1;
             this.groupControl2.Text = "Lên lương";
             // 
             // lstLenLuong
             // 
             this.lstLenLuong.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstLenLuong.ItemHeight = 98;
-            this.lstLenLuong.Location = new System.Drawing.Point(2, 28);
+            this.lstLenLuong.ItemHeight = 80;
+            this.lstLenLuong.Location = new System.Drawing.Point(2, 23);
+            this.lstLenLuong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstLenLuong.Name = "lstLenLuong";
-            this.lstLenLuong.Size = new System.Drawing.Size(272, 198);
+            this.lstLenLuong.Size = new System.Drawing.Size(275, 160);
             this.lstLenLuong.TabIndex = 0;
             itemTemplateBase1.Columns.Add(tableColumnDefinition1);
             templatedItemElement1.FieldName = "HOTEN";
@@ -499,18 +525,20 @@
             this.groupControl1.Controls.Add(this.lstSinhNhat);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupControl1.Location = new System.Drawing.Point(0, 0);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(276, 219);
+            this.groupControl1.Size = new System.Drawing.Size(279, 178);
             this.groupControl1.TabIndex = 0;
             this.groupControl1.Text = "Sinh nhật trong tháng";
             // 
             // lstSinhNhat
             // 
             this.lstSinhNhat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lstSinhNhat.ItemHeight = 120;
-            this.lstSinhNhat.Location = new System.Drawing.Point(2, 28);
+            this.lstSinhNhat.ItemHeight = 97;
+            this.lstSinhNhat.Location = new System.Drawing.Point(2, 23);
+            this.lstSinhNhat.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lstSinhNhat.Name = "lstSinhNhat";
-            this.lstSinhNhat.Size = new System.Drawing.Size(272, 189);
+            this.lstSinhNhat.Size = new System.Drawing.Size(275, 153);
             this.lstSinhNhat.TabIndex = 0;
             tableColumnDefinition2.Length.Value = 268D;
             itemTemplateBase2.Columns.Add(tableColumnDefinition2);
@@ -536,13 +564,12 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1669, 852);
-            this.Controls.Add(this.dockPanel1);
+            this.ClientSize = new System.Drawing.Size(1431, 692);
+            this.Controls.Add(this.hideContainerRight);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Ribbon = this.ribbonControl1;
             this.Text = "Phần mềm quản lý nhân sự";
@@ -552,6 +579,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dockManager1)).EndInit();
+            this.hideContainerRight.ResumeLayout(false);
             this.dockPanel1.ResumeLayout(false);
             this.dockPanel1_Container.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl2)).EndInit();
@@ -609,6 +637,8 @@
         private DevExpress.XtraBars.Docking.DockManager dockManager1;
         private DevExpress.XtraEditors.ListBoxControl lstLenLuong;
         private DevExpress.XtraBars.BarButtonItem btnBangCongCT;
+        private DevExpress.XtraBars.BarButtonItem btnQuanLyUser;
+        private DevExpress.XtraBars.Docking.AutoHideContainer hideContainerRight;
     }
 }
 

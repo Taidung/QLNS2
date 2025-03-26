@@ -441,6 +441,7 @@
     <EntitySetMapping Name="tb_Users">
       <EntityTypeMapping TypeName="QLNHANSUModel.tb_Users">
         <MappingFragment StoreEntitySet="tb_Users">
+          <ScalarProperty Name="role" ColumnName="role" />
           <ScalarProperty Name="password" ColumnName="password" />
           <ScalarProperty Name="username" ColumnName="username" />
           <ScalarProperty Name="id" ColumnName="id" />
