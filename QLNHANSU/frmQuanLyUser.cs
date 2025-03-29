@@ -38,6 +38,8 @@ namespace QLNHANSU
             btnXoa.Enabled = kt;
             btnDong.Enabled = kt;
             txtTen.Enabled = !kt;
+            txtPassword.Enabled = !kt;
+            txtPhanQuyen.Enabled = !kt;
         }
         void loadData()
         {
@@ -92,7 +94,7 @@ namespace QLNHANSU
             {
                 tb_Users user = new tb_Users();
                 user.username = txtTen.Text;
-                user.password = txtPassword.Text;
+                user.password = BCrypt.Net.BCrypt.HashPassword(txtPassword.Text);
                 user.role = txtPhanQuyen.Text;
                 _user.Add(user);
             }
@@ -100,8 +102,8 @@ namespace QLNHANSU
             {
                 var user = _user.getItem(_id);
                 user.username = txtTen.Text;
-                user.username = txtTen.Text;
-                user.password = txtPassword.Text;
+                //user.password = txtPassword.Text;
+                user.password = BCrypt.Net.BCrypt.HashPassword(txtPassword.Text);
                 user.role = txtPhanQuyen.Text;
                 _user.Update(user);
             }

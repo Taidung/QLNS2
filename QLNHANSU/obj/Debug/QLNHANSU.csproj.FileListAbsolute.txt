@@ -257,6 +257,7 @@ D:\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.pdb
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\QLNHANSU.exe.config
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\QLNHANSU.exe
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\QLNHANSU.pdb
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\BCrypt.Net-Next.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\BusinessLayer.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DataLayer.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.BonusSkins.v24.1.dll
@@ -286,6 +287,10 @@ D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraReports.v24.1.Extensions.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraRichEdit.v24.1.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\EntityFramework.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\EntityFramework.SqlServer.dll
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Buffers.dll
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Memory.dll
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Numerics.Vectors.dll
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.Pdf.v24.1.Drawing.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraTreeList.v24.1.dll
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.dll
@@ -304,6 +309,7 @@ D:\QLNS\QLNS2\QLNHANSU\bin\Debug\BusinessLayer.pdb
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\BusinessLayer.dll.config
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DataLayer.pdb
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DataLayer.dll.config
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\BCrypt.Net-Next.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.Charts.v24.1.Core.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.Data.Desktop.v24.1.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.Data.v24.1.xml
@@ -328,6 +334,10 @@ D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraReports.v24.1.Extensions.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraRichEdit.v24.1.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\EntityFramework.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\EntityFramework.SqlServer.xml
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Buffers.xml
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Memory.xml
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Numerics.Vectors.xml
+D:\QLNS\QLNS2\QLNHANSU\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.Pdf.v24.1.Drawing.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraTreeList.v24.1.xml
 D:\QLNS\QLNS2\QLNHANSU\bin\Debug\DevExpress.XtraVerticalGrid.v24.1.xml
@@ -358,6 +368,7 @@ D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmNhanVien_DieuChuyen.resources
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmNhanVien_ThoiViec.resources
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmPhongBan.resources
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmQuanLyLuong.resources
+D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmQuanLyUser.resources
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmRestore.resources
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmTest.resources
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmTonGiao.resources
@@ -383,4 +394,3 @@ D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.csproj.CoreCompileInputs.cache
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.csproj.Up2Date
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.exe
 D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.pdb
-D:\QLNS\QLNS2\QLNHANSU\obj\Debug\QLNHANSU.frmQuanLyUser.resources

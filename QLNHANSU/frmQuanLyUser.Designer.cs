@@ -44,16 +44,16 @@
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.txtPhanQuyen = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.txtPassword = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.txtTen = new DevExpress.XtraEditors.TextEdit();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.gcDanhSach = new DevExpress.XtraGrid.GridControl();
             this.gvDanhSach = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.id = new DevExpress.XtraGrid.Columns.GridColumn();
             this.username = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.txtPassword = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.txtPhanQuyen = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.password = new DevExpress.XtraGrid.Columns.GridColumn();
             this.role = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -61,11 +61,11 @@
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhanQuyen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDanhSach)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhSach)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhanQuyen.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // barManager1
@@ -229,6 +229,50 @@
             this.splitContainer1.SplitterWidth = 3;
             this.splitContainer1.TabIndex = 5;
             // 
+            // txtPhanQuyen
+            // 
+            this.txtPhanQuyen.Location = new System.Drawing.Point(601, 19);
+            this.txtPhanQuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhanQuyen.MenuManager = this.barManager1;
+            this.txtPhanQuyen.Name = "txtPhanQuyen";
+            this.txtPhanQuyen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtPhanQuyen.Properties.Appearance.Options.UseFont = true;
+            this.txtPhanQuyen.Size = new System.Drawing.Size(191, 22);
+            this.txtPhanQuyen.TabIndex = 5;
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(521, 22);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(74, 17);
+            this.labelControl3.TabIndex = 4;
+            this.labelControl3.Text = "Phân quyền";
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(318, 21);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPassword.MenuManager = this.barManager1;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.txtPassword.Properties.Appearance.Options.UseFont = true;
+            this.txtPassword.Size = new System.Drawing.Size(191, 22);
+            this.txtPassword.TabIndex = 3;
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(256, 22);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(56, 17);
+            this.labelControl2.TabIndex = 2;
+            this.labelControl2.Text = "Mật khẩu";
+            // 
             // txtTen
             // 
             this.txtTen.Location = new System.Drawing.Point(53, 21);
@@ -305,50 +349,6 @@
             this.username.VisibleIndex = 1;
             this.username.Width = 171;
             // 
-            // txtPassword
-            // 
-            this.txtPassword.Location = new System.Drawing.Point(318, 21);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPassword.MenuManager = this.barManager1;
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.txtPassword.Properties.Appearance.Options.UseFont = true;
-            this.txtPassword.Size = new System.Drawing.Size(191, 22);
-            this.txtPassword.TabIndex = 3;
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(256, 22);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(56, 17);
-            this.labelControl2.TabIndex = 2;
-            this.labelControl2.Text = "Mật khẩu";
-            // 
-            // txtPhanQuyen
-            // 
-            this.txtPhanQuyen.Location = new System.Drawing.Point(601, 19);
-            this.txtPhanQuyen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPhanQuyen.MenuManager = this.barManager1;
-            this.txtPhanQuyen.Name = "txtPhanQuyen";
-            this.txtPhanQuyen.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.txtPhanQuyen.Properties.Appearance.Options.UseFont = true;
-            this.txtPhanQuyen.Size = new System.Drawing.Size(191, 22);
-            this.txtPhanQuyen.TabIndex = 5;
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(521, 22);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(74, 17);
-            this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "Phần quyền";
-            // 
             // password
             // 
             this.password.AppearanceHeader.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold);
@@ -380,7 +380,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmQuanLyUser";
-            this.Text = "frmQuanLyUser";
+            this.Text = "Quản lý User";
             this.Load += new System.EventHandler(this.frmQuanLyUser_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -388,11 +388,11 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.txtPhanQuyen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gcDanhSach)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvDanhSach)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtPhanQuyen.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

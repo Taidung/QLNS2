@@ -71,7 +71,7 @@ namespace BusinessLayer
             if (user != null)
             {
                 // Kiểm tra mật khẩu đã mã hóa
-                return user.password == password;
+                return BCrypt.Net.BCrypt.Verify(password, user.password);
             }
             return false;
         }
